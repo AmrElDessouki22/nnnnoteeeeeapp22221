@@ -1,17 +1,15 @@
-'use client';
+import React from 'react';
+import NewNoteForm from './components/NewNoteForm';
+import NotesList from './components/NotesList';
 
-import Header from '../components/ui/Header';
-import Footer from '../components/ui/Footer';
-import Notes from '../components/features/Notes';
-
-export default function HomePage() {
+const HomePage = () => {
   return (
-    <div className="container mx-auto">
-      <Header />
-      <main>
-        <Notes />
-      </main>
-      <Footer />
+    <div className="home-page">
+      <h1>Notes</h1>
+      <NewNoteForm />
+      <NotesList />
     </div>
   );
-}
+};
+
+export default HomePage;
