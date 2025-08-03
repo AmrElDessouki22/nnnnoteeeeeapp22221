@@ -1,13 +1,53 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 body {
+  font-family: Arial, sans-serif;
   margin: 0;
-  font-family: 'Inter', sans-serif;
-  background-color: #f0f4f8;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
 }
 
-.container {
-  padding: 2rem;
+.home-page {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.new-note-form {
+  margin-bottom: 20px;
+}
+
+.new-note-form div {
+  margin-bottom: 10px;
+}
+
+.new-note-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.new-note-form input,
+.new-note-form textarea {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.new-note-form button {
+  padding: 10px 15px;
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.new-note-form button:hover {
+  background-color: #005bb5;
+}
+
+.notes-list .note {
+  background-color: white;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
